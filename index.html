@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Learning App - JLPT N5</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="container">
+                <h1 class="logo">🇯🇵 Japanese Learning</h1>
+                <p class="subtitle">JLPT N5 Level</p>
+            </div>
+        </header>
+
+        <nav class="navigation">
+            <div class="container">
+                <ul class="nav-list">
+                    <li><a href="#grammar" class="nav-link active" data-section="grammar">Grammar</a></li>
+                    <li><a href="#vocabulary" class="nav-link" data-section="vocabulary">Vocabulary</a></li>
+                    <li><a href="#kanji" class="nav-link" data-section="kanji">Kanji</a></li>
+                    <li><a href="#reading" class="nav-link" data-section="reading">Reading</a></li>
+                    <li><a href="#practice" class="nav-link" data-section="practice">Practice</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <div class="container">
+                <!-- Grammar Section -->
+                <section id="grammar" class="content-section active">
+                    <h2>Grammar Patterns</h2>
+                    <div class="grammar-grid">
+                        <div class="grammar-card">
+                            <h3>は (wa) - Topic Marker</h3>
+                            <div class="example">
+                                <p class="japanese">私は学生です。</p>
+                                <p class="english">I am a student.</p>
+                                <p class="explanation">は marks the topic of the sentence. It's pronounced "wa" but written with the hiragana は.</p>
+                            </div>
+                        </div>
+                        <div class="grammar-card">
+                            <h3>です (desu) - Polite Copula</h3>
+                            <div class="example">
+                                <p class="japanese">これは本です。</p>
+                                <p class="english">This is a book.</p>
+                                <p class="explanation">です is the polite form of the copula "to be" used in formal situations.</p>
+                            </div>
+                        </div>
+                        <div class="grammar-card">
+                            <h3>が (ga) - Subject Marker</h3>
+                            <div class="example">
+                                <p class="japanese">雨が降っています。</p>
+                                <p class="english">It is raining.</p>
+                                <p class="explanation">が marks the subject of the sentence, often used for new information.</p>
+                            </div>
+                        </div>
+                        <div class="grammar-card">
+                            <h3>を (wo) - Object Marker</h3>
+                            <div class="example">
+                                <p class="japanese">水を飲みます。</p>
+                                <p class="english">I drink water.</p>
+                                <p class="explanation">を marks the direct object of the verb. It's pronounced "o" in modern Japanese.</p>
+                            </div>
+                        </div>
+                        <div class="grammar-card">
+                            <h3>に (ni) - Direction/Time Marker</h3>
+                            <div class="example">
+                                <p class="japanese">学校に行きます。</p>
+                                <p class="english">I go to school.</p>
+                                <p class="explanation">に indicates direction (to) or time (at) depending on context.</p>
+                            </div>
+                        </div>
+                        <div class="grammar-card">
+                            <h3>で (de) - Location/Means Marker</h3>
+                            <div class="example">
+                                <p class="japanese">図書館で勉強します。</p>
+                                <p class="english">I study at the library.</p>
+                                <p class="explanation">で indicates the location where an action takes place or the means by which something is done.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Vocabulary Section -->
+                <section id="vocabulary" class="content-section">
+                    <h2>Essential Vocabulary</h2>
+                    <div class="vocab-categories">
+                        <div class="vocab-category">
+                            <h3>Basic Greetings</h3>
+                            <div class="vocab-list">
+                                <div class="vocab-item">
+                                    <span class="japanese">おはようございます</span>
+                                    <span class="english">Good morning</span>
+                                </div>
+                                <div class="vocab-item">
+                                    <span class="japanese">こんにちは</span>
+                                    <span class="english">Hello/Good afternoon</span>
+                                </div>
+                                <div class="vocab-item">
+                                    <span class="japanese">こんばんは</span>
+                                    <span class="english">Good evening</span>
+                                </div>
+                                <div class="vocab-item">
+                                    <span class="japanese">さようなら</span>
+                                    <span class="english">Goodbye</span>
+                                </div>
+                                <div class="vocab-item">
+                                    <span class="japanese">ありがとうございます</span>
+                                    <span class="english">Thank you very much</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vocab-category">
+                            <h3>Numbers</h3>
+                            <div class="vocab-list">
+                                <div class="vocab-item">
+                                    <span class="japanese">一 (いち)</span>
+                                    <span class="english">1</span>
+                                </div>
+                                <div class="vocab-item">
+                                    <span class="japanese">二 (に)</span>
+                                    <span class="english">2</span>
+                                </div>
+                                <div class="vocab-item">
+                                    <span class="japanese">三 (さん)</span>
+                                    <span class="english">3</span>
+                                </div>
+                                <div class="vocab-item">
+                                    <span class="japanese">四 (よん)</span>
+                                    <span class="english">4</span>
+                                </div>
+                                <div class="vocab-item">
+                                    <span class="japanese">五 (ご)</span>
+                                    <span class="english">5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vocab-category">
+                            <h3>Common Verbs</h3>
+                            <div class="vocab-list">
+                                <div class="vocab-item">
+                                    <span class="japanese">行く (いく)</span>
+                                    <span class="english">to go</span>
+                                </div>
+                                <div class="vocab-item">
+                                    <span class="japanese">来る (くる)</span>
+                                    <span class="english">to come</span>
+                                </div>
+                                <div class="vocab-item">
+                                    <span class="japanese">見る (みる)</span>
+                                    <span class="english">to see/watch</span>
+                                </div>
+                                <div class="vocab-item">
+                                    <span class="japanese">聞く (きく)</span>
+                                    <span class="english">to listen/ask</span>
+                                </div>
+                                <div class="vocab-item">
+                                    <span class="japanese">食べる (たべる)</span>
+                                    <span class="english">to eat</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Kanji Section -->
+                <section id="kanji" class="content-section">
+                    <h2>Basic Kanji (N5 Level)</h2>
+                    <div class="kanji-grid">
+                        <div class="kanji-card">
+                            <div class="kanji-character">人</div>
+                            <div class="kanji-info">
+                                <p class="meaning">person</p>
+                                <p class="onyomi">ジン、ニン</p>
+                                <p class="kunyomi">ひと</p>
+                                <p class="example">日本人 (にほんじん) - Japanese person</p>
+                            </div>
+                        </div>
+                        <div class="kanji-card">
+                            <div class="kanji-character">大</div>
+                            <div class="kanji-info">
+                                <p class="meaning">big, large</p>
+                                <p class="onyomi">ダイ、タイ</p>
+                                <p class="kunyomi">おお</p>
+                                <p class="example">大きい (おおきい) - big</p>
+                            </div>
+                        </div>
+                        <div class="kanji-card">
+                            <div class="kanji-character">小</div>
+                            <div class="kanji-info">
+                                <p class="meaning">small</p>
+                                <p class="onyomi">ショウ</p>
+                                <p class="kunyomi">ちい</p>
+                                <p class="example">小さい (ちいさい) - small</p>
+                            </div>
+                        </div>
+                        <div class="kanji-card">
+                            <div class="kanji-character">山</div>
+                            <div class="kanji-info">
+                                <p class="meaning">mountain</p>
+                                <p class="onyomi">サン</p>
+                                <p class="kunyomi">やま</p>
+                                <p class="example">山 (やま) - mountain</p>
+                            </div>
+                        </div>
+                        <div class="kanji-card">
+                            <div class="kanji-character">川</div>
+                            <div class="kanji-info">
+                                <p class="meaning">river</p>
+                                <p class="onyomi">セン</p>
+                                <p class="kunyomi">かわ</p>
+                                <p class="example">川 (かわ) - river</p>
+                            </div>
+                        </div>
+                        <div class="kanji-card">
+                            <div class="kanji-character">日</div>
+                            <div class="kanji-info">
+                                <p class="meaning">sun, day</p>
+                                <p class="onyomi">ニチ、ジツ</p>
+                                <p class="kunyomi">ひ、か</p>
+                                <p class="example">日本 (にほん) - Japan</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Reading Section -->
+                <section id="reading" class="content-section">
+                    <h2>Reading Comprehension</h2>
+                    <div class="reading-passages">
+                        <div class="reading-passage">
+                            <h3>Passage 1: My Family</h3>
+                            <div class="passage-text">
+                                <p class="japanese">私の家族は四人です。父と母と姉と私です。父は会社員です。母は主婦です。姉は大学生です。私は高校生です。</p>
+                                <p class="english">My family has four people. It's my father, mother, older sister, and me. My father is a company employee. My mother is a housewife. My older sister is a university student. I am a high school student.</p>
+                            </div>
+                            <div class="comprehension-questions">
+                                <h4>Questions:</h4>
+                                <ol>
+                                    <li>How many people are in the family?</li>
+                                    <li>What does the father do?</li>
+                                    <li>What does the sister do?</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="reading-passage">
+                            <h3>Passage 2: Daily Routine</h3>
+                            <div class="passage-text">
+                                <p class="japanese">私は毎朝六時に起きます。七時に朝ご飯を食べます。八時に学校に行きます。学校は午後三時に終わります。家に帰ってから、宿題をします。</p>
+                                <p class="english">I wake up at six every morning. I eat breakfast at seven. I go to school at eight. School ends at three in the afternoon. After I go home, I do my homework.</p>
+                            </div>
+                            <div class="comprehension-questions">
+                                <h4>Questions:</h4>
+                                <ol>
+                                    <li>What time does the person wake up?</li>
+                                    <li>What time does school end?</li>
+                                    <li>What does the person do after going home?</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Practice Section -->
+                <section id="practice" class="content-section">
+                    <h2>Practice Exercises</h2>
+                    <div class="practice-exercises">
+                        <div class="exercise-card">
+                            <h3>Grammar Practice</h3>
+                            <div class="exercise-question">
+                                <p>Complete the sentence: 私は＿＿＿です。</p>
+                                <div class="options">
+                                    <button class="option-btn" data-correct="true">学生</button>
+                                    <button class="option-btn" data-correct="false">行く</button>
+                                    <button class="option-btn" data-correct="false">大きい</button>
+                                </div>
+                                <div class="feedback hidden"></div>
+                            </div>
+                        </div>
+                        <div class="exercise-card">
+                            <h3>Vocabulary Practice</h3>
+                            <div class="exercise-question">
+                                <p>What does おはようございます mean?</p>
+                                <div class="options">
+                                    <button class="option-btn" data-correct="true">Good morning</button>
+                                    <button class="option-btn" data-correct="false">Good evening</button>
+                                    <button class="option-btn" data-correct="false">Thank you</button>
+                                </div>
+                                <div class="feedback hidden"></div>
+                            </div>
+                        </div>
+                        <div class="exercise-card">
+                            <h3>Kanji Practice</h3>
+                            <div class="exercise-question">
+                                <p>What does the kanji 人 mean?</p>
+                                <div class="options">
+                                    <button class="option-btn" data-correct="true">person</button>
+                                    <button class="option-btn" data-correct="false">mountain</button>
+                                    <button class="option-btn" data-correct="false">river</button>
+                                </div>
+                                <div class="feedback hidden"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Japanese Learning App. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

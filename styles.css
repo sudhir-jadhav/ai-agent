@@ -1,0 +1,580 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Noto Sans JP', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* Navigation Styles */
+.navigation {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 0;
+}
+
+.nav-link {
+    display: block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: #666;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #667eea;
+    background: #f8f9ff;
+}
+
+.nav-link.active {
+    color: #667eea;
+    border-bottom-color: #667eea;
+    background: #f8f9ff;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 3rem 0;
+}
+
+.content-section {
+    display: none;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.content-section.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.content-section h2 {
+    font-size: 2.5rem;
+    color: #2d3748;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Grammar Section Styles */
+.grammar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.grammar-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.grammar-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.grammar-card h3 {
+    color: #667eea;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+}
+
+.example {
+    margin-top: 1rem;
+}
+
+.japanese {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.2rem;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.english {
+    color: #4a5568;
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.explanation {
+    color: #718096;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+/* Vocabulary Section Styles */
+.vocab-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.vocab-category {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.vocab-category:hover {
+    transform: translateY(-3px);
+}
+
+.vocab-category h3 {
+    color: #667eea;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.vocab-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.vocab-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #f7fafc;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.vocab-item:hover {
+    background: #edf2f7;
+}
+
+.vocab-item .japanese {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.vocab-item .english {
+    color: #4a5568;
+    font-weight: 500;
+}
+
+/* Kanji Section Styles */
+.kanji-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.kanji-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.kanji-card:hover {
+    transform: translateY(-5px);
+}
+
+.kanji-character {
+    font-size: 4rem;
+    color: #667eea;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.kanji-info p {
+    margin-bottom: 0.8rem;
+    color: #4a5568;
+}
+
+.kanji-info .meaning {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.kanji-info .onyomi,
+.kanji-info .kunyomi {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #667eea;
+    font-weight: 500;
+}
+
+.kanji-info .example {
+    font-size: 0.9rem;
+    color: #718096;
+    font-style: italic;
+}
+
+/* Reading Section Styles */
+.reading-passages {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.reading-passage {
+    background: white;
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.reading-passage h3 {
+    color: #667eea;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.passage-text {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f7fafc;
+    border-radius: 12px;
+    border-left: 4px solid #667eea;
+}
+
+.passage-text .japanese {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.comprehension-questions h4 {
+    color: #2d3748;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.comprehension-questions ol {
+    padding-left: 1.5rem;
+}
+
+.comprehension-questions li {
+    margin-bottom: 0.8rem;
+    color: #4a5568;
+}
+
+/* Practice Section Styles */
+.practice-exercises {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.exercise-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-card h3 {
+    color: #667eea;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.exercise-question p {
+    font-size: 1.1rem;
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.option-btn {
+    padding: 1rem 1.5rem;
+    background: #f7fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #4a5568;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.option-btn:hover {
+    background: #edf2f7;
+    border-color: #cbd5e0;
+}
+
+.option-btn.correct {
+    background: #c6f6d5;
+    border-color: #68d391;
+    color: #22543d;
+}
+
+.option-btn.incorrect {
+    background: #fed7d7;
+    border-color: #fc8181;
+    color: #742a2a;
+}
+
+.feedback {
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.feedback.correct {
+    background: #c6f6d5;
+    color: #22543d;
+    border: 1px solid #68d391;
+}
+
+.feedback.incorrect {
+    background: #fed7d7;
+    color: #742a2a;
+    border: 1px solid #fc8181;
+}
+
+.feedback.hidden {
+    display: none;
+}
+
+/* Progress Bar Styles */
+.progress-bar {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.progress-text {
+    color: white;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+}
+
+.progress-track {
+    width: 200px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #68d391, #38a169);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+/* Search Styles */
+.search-container {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem 1.5rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.search-results {
+    margin-top: 1rem;
+    color: #4a5568;
+    font-size: 0.9rem;
+}
+
+/* Timer Styles */
+.timer-container {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.timer-display {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.timer-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-right: 0.5rem;
+}
+
+.timer-value {
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'Courier New', monospace;
+}
+
+.timer-btn {
+    background: #38a169;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.timer-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+.footer {
+    background: #2d3748;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+.footer p {
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-link {
+        border-bottom: none;
+        border-right: 3px solid transparent;
+    }
+    
+    .nav-link.active {
+        border-right-color: #667eea;
+        border-bottom: none;
+    }
+    
+    .grammar-grid,
+    .vocab-categories,
+    .kanji-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .logo {
+        font-size: 2rem;
+    }
+    
+    .content-section h2 {
+        font-size: 2rem;
+    }
+    
+    .kanji-character {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .grammar-card,
+    .vocab-category,
+    .kanji-card,
+    .reading-passage,
+    .exercise-card {
+        padding: 1.5rem;
+    }
+    
+    .logo {
+        font-size: 1.8rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+}
